@@ -1,7 +1,10 @@
-import Button from "react-bootstrap/Button";
+import Button from './ButtonComponent';
 
-const ButtonComponent = () => {
+const Button = ({ label, bsButtonType, onClickFunction }) => {
 
-    return<button>Click aqui</button>
-}
-export default ButtonComponent
+    return <Button variant={bsButtonType} onClick={onClickFunction}>{label}</Button>;
+};
+
+export default ButtonComponent;
+
+
